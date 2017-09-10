@@ -26,7 +26,7 @@ SECRET_KEY = 'z9h-yv8*cv*x$$_)i7-n^zs85q(i)7s_+t!ltj@%_be_7)(b_k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['igdown.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'igdown.herokuapp.com']
 
 
 # Application definition
