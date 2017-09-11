@@ -7,10 +7,12 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         
         <title>IGDown - Instagram downloader</title>
-    
+
+        <link rel="icon" href="{% static 'downloader/images/favicon.png' %}">
+        
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    
+        
         <link rel="stylesheet" href="{% static 'downloader/styles/style.css' %}">
     </head>
     <body>
@@ -18,18 +20,18 @@
             <div class="row white-text">
                 <div class="col s12 center">
                     <h1>IGDown</h1>
-    
+
                     <div class="row">
                         <form action="{% url 'downloader:download' %}" method="POST" class="col s12 m6 l4 offset-m3 offset-l4" id="download_form">
                             {% csrf_token %}
-    
+
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">insert_link</i>
                                 <input type="url" name="download_url" id="download_url" required="required" />
                                 <label for="download_url">Enter Instagram media URL</label>
                             </div>
                             
-                            <button type="submit" class="waves-effect waves-light btn-large">
+                            <button type="submit" class="waves-effect waves-light btn-large z-depth-3">
                                 Download
                                 <i class="material-icons right">file_download</i>
                             </button>
@@ -38,9 +40,20 @@
                 </div>
             </div>
         </main>
-    
+
+        <footer class="page-footer teal">
+            <div class="footer-copyright">
+                <div class="container">
+                © 2017 wencakisa
+                <a class="grey-text text-lighten-4 right" href="https://github.com/wencakisa/igdown/" target="_blank">
+                    <strong>Project is open-sourced <i class="material-icons" id="code_icon">code</i></strong>
+                </a>
+                </div>
+            </div>
+        </footer>
+
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         <script type="text/javascript" src="{% static 'downloader/scripts/script.js' %}"></script>
     </body>
-    </html>
+</html>

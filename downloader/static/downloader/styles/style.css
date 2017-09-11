@@ -1,7 +1,24 @@
 body {
-    background: url('../images/background.png') no-repeat center center fixed;
+    background: url('../images/background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    opacity: 0.8;
+}
+
+#code_icon {
+    display: inline-flex;
+    vertical-align: top;
 }
