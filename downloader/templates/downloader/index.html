@@ -20,9 +20,10 @@
             <div class="row white-text">
                 <div class="col s12 center">
                     <h1>IGDown</h1>
+                    <h6 id="subheader" class="grey-text text-lighten-1">Download Instagram photos and videos with one click</h6>
 
                     <div class="row">
-                        <form action="{% url 'downloader:download' %}" method="POST" class="col s12 m6 l4 offset-m3 offset-l4" id="download_form">
+                        <form action="{% url 'downloader:download' %}" method="POST" class="col s12 m8 l6 offset-m2 offset-l3" id="download_form">
                             {% csrf_token %}
 
                             <div class="input-field col s12">

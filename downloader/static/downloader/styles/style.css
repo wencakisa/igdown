@@ -18,6 +18,11 @@ footer {
     opacity: 0.8;
 }
 
+#subheader {
+    font-style: italic;
+    padding-bottom: 15vh;
+}
+
 #code_icon {
     display: inline-flex;
     vertical-align: top;
