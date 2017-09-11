@@ -1,7 +1,7 @@
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/made-with-python.svg)](http://forthebadge.com)
 
-![Logo](https://raw.githubusercontent.com/wencakisa/igdown/master/downloader/static/downloader/images/logo.jpg)
+![Logo](https://raw.githubusercontent.com/wencakisa/igdown/master/downloader/static/downloader/images/favicon.jpg)
 
 
 # [IGDown](https://igdown.herokuapp.com/)
