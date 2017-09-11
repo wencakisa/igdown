@@ -1,4 +1,3 @@
-import mimetypes
 from wsgiref.util import FileWrapper
 
 from django.shortcuts import render
@@ -8,7 +7,7 @@ from .ig_downloader import InstagramDownloader
 
 
 def home(request):
-    return render(request, 'base.html')
+    return render(request, 'downloader/index.html')
 
 def download(request):
     download_url = request.POST['download_url']
@@ -16,11 +15,8 @@ def download(request):
     downloader.download()
 
     filename = downloader.get_output_filename()
-
     wrapper = FileWrapper(open(filename, mode='rb'))
-    content_type = mimetypes.guess_type(downloader.get_download_url())
-
-    response = HttpResponse(wrapper, content_type=content_type)
+    response = HttpResponse(wrapper)
     response['Content-Disposition'] = "attachment; filename={}".format(filename)
 
     return response
